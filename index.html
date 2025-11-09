@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+<!-- all min css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- <link rel="icon" href="./images/logo.png"> -->
+<!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- My css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+<!-- offcanvas -->
+    <div class="offcanvas offcanvas-start bg-light" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                <div class="col-lg-2 col-sm-4">
+                        <img src="./images/logo.png" alt="" style="width: 85%;">
+                    </div>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled m-0">
+                <li class="text-start pt-3">
+                    <a href="index.html" class="text-decoration-none textShadow color-p fs-5">Home</a>
+                </li>
+                <li class="text-start pt-3">
+                    <a href="#recipes" class="text-decoration-none textShadow color-p fs-5">Recipes</a>
+                </li>
+                <li class="text-start pt-3">
+                    <a href="#" class="text-decoration-none textShadow color-p fs-5">About</a>
+                </li>
+                <li class="text-start pt-3">
+                    <a href="#" class="text-decoration-none textShadow color-p fs-5">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex align-items-center">
+                    <div class="col-lg-3 col-sm-3">
+                        <img src="./images/logo.png" alt="" style="width: 85%;">
+                    </div>
+                    <nav class="col-lg-6 d-sm-none d-lg-block">
+                        <ul class="d-flex justify-content-end align-items-center list-unstyled mb-0">
+                            <li class="ps-5">
+                                <a href="./index.html" class="text-decoration-none fw-bold fs-5 color-p">Home</a>
+                            </li>
+                            <li class="ps-5">
+                                <a href="#recipes" class="text-decoration-none fw-bold fs-5 color-p ">Recipes</a>
+                            </li>
+                            <li class="ps-5">
+                                <a href="#" class="text-decoration-none fw-bold fs-5 color-p ">About</a>
+                            </li>
+                            <li class="ps-5 pe-5">
+                                <a href="#" class="text-decoration-none fw-bold fs-5 color-p ">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col-lg-3 d-sm-none d-lg-block">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="bg-color-p text-white btn-my" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-9 d-sm-block d-lg-none d-sm-flex justify-content-end">
+                        <i class="fa-solid fa-bars-staggered fa-bounce fa-lg"  data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="color: #734060;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="right-side" id="recipes">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 d-flex p-0">
+                        <div class="col-lg-2 col-sm-5">
+                            <div class="sidebar">
+                                <h2>Recipes</h2>
+                                <ul class="recipe-list" id="recipeList">
+                                    <li class="loading">Loading recipes...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-sm-7">
+                            <div class="d-flex ps-lg-5 pt-lg-5 ps-sm-4 pt-sm-4">
+                                <p class="font-arvo fs-lg-28 fs-sm-14">Simple recipes made for</p>
+                                <p class="font fs-lg-28 fs-sm-14 ps-2 color-p">real, actual, everyday life.</p>
+                            </div>
+                            <div class="content ps-lg-5 ps-sm-4"" id="recipeContent">
+                                <h1 class="fs-sm-16">Welcome to Pinch of Yum!</h1>
+                                <p class=" fs-sm-16">Select a recipe from the left to view details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- My JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
