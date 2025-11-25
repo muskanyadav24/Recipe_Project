@@ -36,3 +36,16 @@ const recipeUrl = () => {
         });
 }
 recipeUrl();
+
+// JQuery
+$(document).ready(() =>{
+    $("#themebtn").click(function(){
+    if($("body, .right-side, .sidebar").hasClass("light")){
+        $("body, .right-side, .sidebar").removeClass("light").addClass("dark");
+        $("#themebtn").text("Light Mode");
+    }else{
+        $("body, .right-side, .sidebar").removeClass("dark").addClass("light");
+        $("#themebtn").text("Dark Mode");
+    }       
+    });
+});
