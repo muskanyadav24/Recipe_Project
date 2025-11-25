@@ -11,6 +11,16 @@ body.dark{
     color: #fff;
     transition: 0.3s;
 }
+.right-side.dark {
+    background-color: rgba(40, 40, 40, 0.4);
+    color: white;
+    transition: 0.3s;
+}
+.sidebar.dark {
+    background-color: rgba(40, 40, 40, 0.4);
+    color: white;
+    transition: 0.3s;
+}
 .font {
     font-family: "Shadows Into Light", cursive;
 }
