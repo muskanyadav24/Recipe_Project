@@ -37,7 +37,7 @@ const recipeUrl = () => {
 }
 recipeUrl();
 
-// JQuery
+// JQuery for Theme Toggle
 $(document).ready(() =>{
     $("#themebtn").click(function(){
     if($("body, .right-side, .sidebar").hasClass("light")){
@@ -47,5 +47,5 @@ $(document).ready(() =>{
         $("body, .right-side, .sidebar").removeClass("dark").addClass("light");
         $("#themebtn").text("Dark Mode");
     }       
-    });
+});
 });
