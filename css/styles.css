@@ -1,14 +1,24 @@
 body {
     font-family: "Patrick Hand", cursive;
 }
-body.light{
+
+.font {
+    font-family: "Shadows Into Light", cursive;
+}
+
+.font-arvo {
+    font-family: "Arvo", serif;
+}
+
+body.light {
     background-color: #fff;
     color: black;
     transition: 0.3s;
 }
-body.dark{
-    background-color: black;
-    color: #fff;
+
+body.dark {
+    background-color: #000;
+    color: white;
     transition: 0.3s;
 }
 .right-side.dark {
@@ -21,12 +31,7 @@ body.dark{
     color: white;
     transition: 0.3s;
 }
-.font {
-    font-family: "Shadows Into Light", cursive;
-}
-.font-arvo {
-    font-family: "Arvo", serif;
-}
+
 header {
     /* background-color: rgba(115, 64, 96, 0.8 ); */
     color: white;
@@ -34,23 +39,28 @@ header {
     text-align: center;
     box-shadow: 2px 2px 5px rgba(164, 163, 163, 0.3);
 }
+
 .color-p {
     color: #734060;
 }
+
 .bg-color-p {
     background-color: #734060;
 }
+
 .btn-my {
     padding: 10px;
     border-radius: 10px;
     border: none;
 }
-.right-side{
+
+.right-side {
     /* background-color: rgb(234, 234, 219); */
     background-color: rgb(225, 225, 217);
     box-shadow: 2px 2px 5px rgba(164, 163, 163, 0.3);
     /* height: calc(100vh - 70px); */
 }
+
 .sidebar {
     width: 100%;
     /* width: 280px; */
@@ -59,43 +69,52 @@ header {
     overflow-y: scroll;
     padding: 20px;
 }
+
 .sidebar h2 {
     text-align: center;
     margin-bottom: 15px;
 }
+
 .recipe-list {
     list-style: none;
     padding: 0;
 }
+
 .recipe-list li {
     padding: 12px;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 .recipe-list li:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
+
 .content {
     flex: 1;
     padding: 0px 53px 40px;
     overflow-y: auto;
 }
+
 .recipe-img {
     width: 100%;
     max-width: 400px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-@media(max-width:576px){
-    .fs-sm-14{
+
+@media(max-width:576px) {
+    .fs-sm-14 {
         font-size: 14px;
     }
-    .fs-sm-16{
+
+    .fs-sm-16 {
         font-size: 16px;
     }
 }
-@media(min-width:992px){
-    .fs-lg-28{
-    font-size: 28px;
-}
+
+@media(min-width:992px) {
+    .fs-lg-28 {
+        font-size: 28px;
+    }
 }
