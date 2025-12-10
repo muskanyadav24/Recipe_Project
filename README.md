@@ -50,7 +50,8 @@ Recipe_Project/
 
 📸 Preview
 
-<br><img width="1920" height="1864" alt="image" src="https://github.com/user-attachments/assets/7dace544-de3b-4777-97c2-90bbbb861ffe" /><br>
+<br><img width="1920" height="1844" alt="image" src="https://github.com/user-attachments/assets/b60134c3-8d2a-4aac-9d12-31b0912b1268" />
+<br>
 
 💡 Future Enhancements
 
